@@ -8,8 +8,6 @@ using UnityEngine.UI;
 
 public class Grapple : MonoBehaviour
 {
-    private Camera _camera;
-
     [Header("Grapple Settings")]
     [Tooltip("Velocity while using the grapple.")]
     [SerializeField] private float _grappleSpeed;
@@ -29,6 +27,7 @@ public class Grapple : MonoBehaviour
 
     private Rigidbody _rg;
     private LineRenderer _ropeRenderer;
+    private Camera _camera;
 
     [Header("UI Settings")]
     [SerializeField] private Image _indicator;
